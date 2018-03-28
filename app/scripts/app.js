@@ -1,5 +1,5 @@
 (function() {
-    function cinfig($locationProvider, $stateProvider) {
+    function config($locationProvider, $stateProvider) {
         $locationProvider
             .html5Mode({
                 enabled: true,
@@ -10,7 +10,7 @@
             .state('home', {
                 url: '/',
                 controller: 'HomeCtrl as home',
-                templateUrl: '/templates?home.html'
+                templateUrl: '/templates/home.html'
             });
     }
 
