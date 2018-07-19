@@ -1,5 +1,7 @@
 <h1>Home Page</h1>
 
-<h2 ng-repeat="room in home.rooms"> {{ room.$value }} </h2>
+<h2 ng-repeat="room in home.rooms" ng-click="home.setRoom(room)"> {{ room.$value }} </h2>
+
+<h3 ng-repeat="message in home.messages"> {{ message.username }} : {{ message.content }} : Received At {{ message.sentAt }} </h3>
 
 <button ng-click="home.open()"> Add room </button>
